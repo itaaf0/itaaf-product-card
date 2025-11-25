@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itaaf Product Cards</title>
+  <style>
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* ডেস্কটপ: ৪টি এক লাইনে */
+      gap: 15px;
+      height: fit-content; /* GitHub Pages & embed friendly */
+    }
+
+    .product-card {
+      text-align: center;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .product-card img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Premium Order Button */
+    .order-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: linear-gradient(135deg, #1f2937, #4b5563);
+      color: #fff;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+    }
+
+    .order-btn:hover {
+      transform: translateY(-3px) scale(1.05);
+      background: linear-gradient(135deg, #111827, #374151);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    }
+
+    /* Responsive grid adjustments */
+    @media screen and (max-width: 1024px) {
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* মোবাইল/ট্যাবলেটে ২টি এক লাইনে */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="product-grid">
+
+  <!-- Product 1 -->
+  <div class="product-card">
+    <a href="https://sites.google.com/view/itaafcom/panjabi/print-panjabi/china-print-panjabi-pest">
+      <img src="https://raw.githubusercontent.com/itaaf0/Itaaf-product-images/01233c8e05b23b3bab2d02d3ec493fc3dc088d65/IMG-20251110-WA0001%20(4).png" alt="Product 1"/>
+    </a>
+    <h3>Product 1 Name</h3>
+    <p>৳ Price</p>
+    <a href="https://sites.google.com/view/itaafcom/panjabi/print-panjabi/china-print-panjabi-pest" class="order-btn">Order Now</a>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="product-card">
+    <a href="YOUR_PAGE_LINK">
+      <img src="https://raw.githubusercontent.com/itaaf0/Itaaf-product-images/main/IMG-20251110-WA0001%20(3).png" alt="Product 3"/>
+    </a>
+    <h3>Product 3 Name</h3>
+    <p>৳ Price</p>
+    <a href="YOUR_PAGE_LINK" class="order-btn">Order Now</a>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="product-card">
+    <a href="YOUR_PAGE_LINK">
+      <img src="https://raw.githubusercontent.com/itaaf0/Itaaf-product-images/main/IMG-20251110-WA0001%20(5).png" alt="Product 2"/>
+    </a>
+    <h3>Product 2 Name</h3>
+    <p>৳ Price</p>
+    <a href="YOUR_PAGE_LINK" class="order-btn">Order Now</a>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="product-card">
+    <a href="YOUR_PAGE_LINK">
+      <img src="https://raw.githubusercontent.com/itaaf0/Itaaf-product-images/main/IMG-20251110-WA0001.png" alt="Product 4"/>
+    </a>
+    <h3>Product 4 Name</h3>
+    <p>৳ Price</p>
+    <a href="YOUR_PAGE_LINK" class="order-btn">Order Now</a>
+  </div>
+
+</div>
+
+</body>
+</html>
